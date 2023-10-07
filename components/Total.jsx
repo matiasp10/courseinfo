@@ -1,3 +1,8 @@
-export default function Total(props) {
-  return <div>Number of exercises {props.total}</div>;
+export default function Total({ total }) {
+  return (
+    <div>
+      Number of exercises{' '}
+      {total[0].exercises + total[1].exercises + total[2].exercises}
+    </div>
+  );
 }
