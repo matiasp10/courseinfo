@@ -7,7 +7,7 @@ function Course({ course }) {
     <>
       <Header course={course.name} />
       <Content parts={course.parts} />
-      <Total total={course.parts} />
+      <Total total={course.parts.map((a) => a.exercises)} />
     </>
   );
 }
