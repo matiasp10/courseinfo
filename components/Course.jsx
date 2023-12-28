@@ -4,11 +4,11 @@ import Total from './Total';
 
 function Course({ course }) {
   return (
-    <div>
+    <>
       <Header course={course.name} />
       <Content parts={course.parts} />
       <Total total={course.parts} />
-    </div>
+    </>
   );
 }
 

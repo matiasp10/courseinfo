@@ -45,8 +45,8 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <>
       <Course course={course} />
-    </div>
+    </>
   );
 }
